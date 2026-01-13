@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Day1</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Animated Background Effects -->
+    <div class="bg-glow bg-glow-1"></div>
+    <div class="bg-glow bg-glow-2"></div>
+    <div class="particles">
+      <div class="particle"></div>
+      <div class="particle"></div>
+      <div class="particle"></div>
+      <div class="particle"></div>
+      <div class="particle"></div>
+    </div>
+
+    <div class="container">
+      <div class="glass-terminal">
+        <!-- Decorative corner accents -->
+        <div class="corner-accent corner-tl"></div>
+        <div class="corner-accent corner-tr"></div>
+        <div class="corner-accent corner-bl"></div>
+        <div class="corner-accent corner-br"></div>
+
+        <header>
+          <div class="logo-container">
+            <div class="logo-circle">
+              <div class="logo-ring"></div>
+              <div class="inner-logo"></div>
+            </div>
+          </div>
+          <div class="header-text">
+            <h1>AVALANCHE dApp</h1>
+            <div class="connection-status">
+              <span id="dot" class="dot"></span>
+              <span id="status">DISCONNECTED</span>
+            </div>
+          </div>
+        </header>
+
+        <main>
+          <div class="data-group">
+            <div class="data-box address-box">
+              <label>
+                <span class="label-icon"></span>
+                WALLET ADDRESS
+              </label>
+              <div id="address" class="value address-value">0x000...000</div>
+            </div>
+
+            <div class="grid-stats">
+              <div class="data-box network-box">
+                <label>
+                  <span class="label-icon"></span>
+                  NETWORK
+                </label>
+                <div id="network" class="value">-</div>
+              </div>
+              <div class="data-box balance-box">
+                <label>
+                  <span class="label-icon"></span>
+                  BALANCE
+                </label>
+                <div class="value balance-value">
+                  <span id="balance">0.00</span>
+                  <span class="symbol">AVAX</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="controls">
+            <button id="connectBtn" class="btn-primary">
+              <span class="btn-icon"></span>
+              CONNECTION WALLET
+            </button>
+            <button id="disconnectBtn" class="btn-outline hidden">
+              <span class="btn-icon"></span>
+              TERMINATE SESSION
+            </button>
+          </div>
+        </main>
+
+        <footer class="developer-tag">
+          <div class="tag-line"></div>
+          <div class="dev-info">
+            <span class="dev-name">Nikko Alfarizki</span>
+            <span class="dev-id">NIM: 211011400883</span>
+          </div>
+        </footer>
+      </div>
+    </div>
+    <script src="script.js" defer></script>
+  </body>
+</html>
