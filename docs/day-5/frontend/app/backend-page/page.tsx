@@ -1,7 +1,7 @@
 import {
   getBlockchainValue,
   getBlockchainEvents,
-} from "@/services/blockchain.service";
+} from "../services/blockchain.service";
 
 export default async function HomePage() {
   const value = await getBlockchainValue();
